@@ -1,8 +1,33 @@
 <html>
   <body>
-    <img src="http://i.imgur.com/GGCom6Q.png" />
-    <h1> Under construction </h1>
-    <p>This is the amazing platform for Magnús Dæhlen and his shenanigans.</p>
-    <p>As you see, we got a great man on our team!</p>
+    <img id="img" style="display: hidden; width:580; height:400; " src="" />
   </body>
+
+  <script>
+    var heads = [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+    ]
+    function getRandomInt(max) {
+      return Math.floor(Math.random() * Math.floor(max));
+    }
+    function selectImage(){
+      var img = document.getElementById('img');
+      img.src = window.location.href + "/images/" + heads[getRandomInt(12)] + ".png";
+      img.style.display = block;
+    }
+
+    selectImage();
+  </script>
 </html>
