@@ -22,13 +22,14 @@
       "12",
       "13",
       "14",
+      "15",
     ]
     function getRandomInt(max) {
       return Math.floor(Math.random() * Math.floor(max));
     }
     function selectImage(){
       var img = document.getElementById('img');
-      img.src = window.location.href + "/images/" + heads[getRandomInt(12)] + ".png";
+      img.src = window.location.href + "/images/" + heads[getRandomInt(14)] + ".png";
       img.style.display = block;
     }
 
