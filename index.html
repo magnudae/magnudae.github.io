@@ -32,7 +32,7 @@
     }
     function selectImage(){
       var img = document.getElementById('img');
-      img.src = window.location.href + "/images/" + heads[getRandomInt(18)] + ".png";
+      img.src = window.location.href + "/images/" + heads[getRandomInt(heads.length)] + ".png";
       img.style.display = "block";
     }
 
